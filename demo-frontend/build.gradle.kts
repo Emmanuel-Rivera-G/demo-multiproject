@@ -31,17 +31,14 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-
-	// JavaFX dependencies
-	implementation("org.openjfx:javafx-controls:17.0.2") // Cambia la versión según sea necesario
-	implementation("org.openjfx:javafx-fxml:17.0.2") // Para usar FXML
-	implementation("org.openjfx:javafx-base:17.0.2") // Base de JavaFX
-
-	// ControlsFX dependency
-	implementation("org.controlsfx:controlsfx:11.1.0") // Cambia la versión según sea necesario
-
-	// Gluon dependency (si es necesario)
-	implementation("com.gluonhq:charm:6.0.0") // Cambia la versión según sea necesario
+	implementation("org.openjfx:javafx-controls:23.0.1")
+	implementation("org.openjfx:javafx-fxml:23.0.1")
+	implementation("org.openjfx:javafx-base:23.0.1")
+	implementation("org.controlsfx:controlsfx:11.2.1")
+	implementation("com.gluonhq:charm-down-core:3.8.6")
+	implementation("com.gluonhq:charm-down-plugin-storage:3.8.6")
+	implementation("com.gluonhq:charm-down-plugin-display:3.8.6")
+	runtimeOnly("com.gluonhq.attach:util:4.0.21")
 }
 
 tasks.withType<Test> {
