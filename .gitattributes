@@ -1,0 +1,26 @@
+# Para los archivos de Gradle Wrapper
+/gradlew text eol=lf
+*.bat text eol=crlf
+
+# Archivos JAR como binarios
+*.jar binary
+
+# Configuración para archivos de texto
+*.java text
+*.kt text
+*.groovy text
+
+# Archivos de configuración de build
+build.gradle text
+settings.gradle text
+*.gradle text
+*.gradle.kts text
+
+# Archivos de Markdown
+*.md text eol=lf
+
+# Otros archivos comunes
+*.xml text
+*.properties text
+*.yml text
+*.yaml text
