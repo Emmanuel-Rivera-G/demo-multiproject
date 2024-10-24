@@ -1,6 +1,6 @@
 plugins {
 	java
-	id("org.springframework.boot") version "3.4.0-M3"
+	id("org.springframework.boot") version "3.3.5"
 	id("io.spring.dependency-management") version "1.1.6"
 }
 
@@ -31,6 +31,17 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+	// JavaFX dependencies
+	implementation("org.openjfx:javafx-controls:17.0.2") // Cambia la versión según sea necesario
+	implementation("org.openjfx:javafx-fxml:17.0.2") // Para usar FXML
+	implementation("org.openjfx:javafx-base:17.0.2") // Base de JavaFX
+
+	// ControlsFX dependency
+	implementation("org.controlsfx:controlsfx:11.1.0") // Cambia la versión según sea necesario
+
+	// Gluon dependency (si es necesario)
+	implementation("com.gluonhq:charm:6.0.0") // Cambia la versión según sea necesario
 }
 
 tasks.withType<Test> {
